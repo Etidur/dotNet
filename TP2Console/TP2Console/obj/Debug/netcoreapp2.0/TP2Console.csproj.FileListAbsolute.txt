@@ -1,0 +1,11 @@
+c:\users\admin\source\repos\TP2Console\TP2Console\bin\Debug\netcoreapp2.0\TP2Console.deps.json
+c:\users\admin\source\repos\TP2Console\TP2Console\bin\Debug\netcoreapp2.0\TP2Console.runtimeconfig.json
+c:\users\admin\source\repos\TP2Console\TP2Console\bin\Debug\netcoreapp2.0\TP2Console.runtimeconfig.dev.json
+c:\users\admin\source\repos\TP2Console\TP2Console\bin\Debug\netcoreapp2.0\TP2Console.dll
+c:\users\admin\source\repos\TP2Console\TP2Console\obj\Debug\netcoreapp2.0\TP2Console.csproj.CoreCompileInputs.cache
+c:\users\admin\source\repos\TP2Console\TP2Console\obj\Debug\netcoreapp2.0\TP2Console.AssemblyInfoInputs.cache
+c:\users\admin\source\repos\TP2Console\TP2Console\obj\Debug\netcoreapp2.0\TP2Console.AssemblyInfo.cs
+c:\users\admin\source\repos\TP2Console\TP2Console\obj\Debug\netcoreapp2.0\TP2Console.csprojAssemblyReference.cache
+c:\users\admin\source\repos\TP2Console\TP2Console\bin\Debug\netcoreapp2.0\TP2Console.pdb
+c:\users\admin\source\repos\TP2Console\TP2Console\obj\Debug\netcoreapp2.0\TP2Console.dll
+c:\users\admin\source\repos\TP2Console\TP2Console\obj\Debug\netcoreapp2.0\TP2Console.pdb
