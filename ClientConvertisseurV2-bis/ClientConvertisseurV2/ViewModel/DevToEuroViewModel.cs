@@ -16,14 +16,14 @@ namespace ClientConvertisseurV2.ViewModel
     /// <summary>
     /// Classe faisant le lien entre le modèle et la vue
     /// </summary>
-    public class MainViewModel : ViewModelBase
+    public class DevToEuroViewModel : ViewModelBase
     {
         private ObservableCollection<Devise> _comboBoxDevises;
         public ICommand BtnSetConversion { get; private set; }
 
-        private string _montantEuros;
+        private string _montantDevise;
+        private string _montantEuro;
         private Devise _devise;
-        private string _montantConverti;
 
         public ObservableCollection<Devise> ComboBoxDevises
         {
@@ -34,30 +34,31 @@ namespace ClientConvertisseurV2.ViewModel
                 RaisePropertyChanged();// Pour notifier de la modification de ses donnée
             }
         }
-        public string MontantEuros {
-            get { return _montantEuros; }
-            set { _montantEuros = value; RaisePropertyChanged(); }
+        public string MontantDevise
+        {
+            get { return _montantDevise; }
+            set { _montantDevise = value; RaisePropertyChanged(); }
         }
         public Devise ComboBoxDeviseItem
         {
             get { return _devise; }
             set { _devise = value; RaisePropertyChanged(); }
         }
-        public string MontantConverti
+        public string MontantEuro
         {
-            get { return _montantConverti; }
-            set { _montantConverti = value; RaisePropertyChanged("MontantConverti"); }
+            get { return _montantEuro; }
+            set { _montantEuro = value; RaisePropertyChanged("MontantEuro"); }
         }
 
         /// <summary>
         /// Complète l'interface avec des valeurs dynamiques et initialise l'action du bouton
         /// </summary>
-        public MainViewModel()
+        public DevToEuroViewModel()
         {
             ActionGetData();
             BtnSetConversion = new RelayCommand(ActionSetConversion);
         }
-
+        
         /// <summary>
         /// Calcule la conversion et affiche le résultat dans l'interface
         /// </summary>
@@ -67,8 +68,8 @@ namespace ClientConvertisseurV2.ViewModel
 
             try
             {
-                montant = Convert.ToDouble(_montantEuros);
-                taux = ComboBoxDeviseItem.Taux;
+                montant = Convert.ToDouble(_montantDevise);
+                taux = 1 / (ComboBoxDeviseItem.Taux);
             }
             catch (FormatException)
             {
@@ -79,7 +80,7 @@ namespace ClientConvertisseurV2.ViewModel
                 this.MessageBox("Aucune devise n'a été séléctionnée");
             }
 
-            MontantConverti = Convert.ToString(montant * taux);
+            MontantEuro = Convert.ToString(montant * taux);
          }
 
         /// <summary>
