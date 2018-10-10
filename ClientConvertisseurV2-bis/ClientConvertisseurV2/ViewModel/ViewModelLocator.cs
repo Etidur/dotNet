@@ -23,12 +23,12 @@ namespace ClientConvertisseurV2.ViewModel
             SimpleIoc.Default.Register<DevToEuroViewModel>();
         }
         /// <summary>         
-        /// Gets the Main property.         
+        /// Gets the EuroToDev model.         
         /// </summary>         
         public EuroToDevViewModel EuroToDev => ServiceLocator.Current.GetInstance<EuroToDevViewModel>();
 
         /// <summary>         
-        /// Gets the Main property.         
+        /// Gets the DevToEuro model.         
         /// </summary>         
         public DevToEuroViewModel DevToEuro => ServiceLocator.Current.GetInstance<DevToEuroViewModel>();
     }

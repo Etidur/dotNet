@@ -14,7 +14,7 @@ using Windows.UI.Popups;
 namespace ClientConvertisseurV2.ViewModel
 {
     /// <summary>
-    /// Classe faisant le lien entre le modèle et la vue
+    /// Classe gérant le traitement de la page EuroToDev
     /// </summary>
     public class EuroToDevViewModel : AbstractDeviseViewModel
     {

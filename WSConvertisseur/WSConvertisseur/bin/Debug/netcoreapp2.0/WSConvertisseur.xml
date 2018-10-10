@@ -20,7 +20,7 @@
             </summary>
         </member>
         <!-- Commentaire XML incorrect pour le membre "M:WSConvertisseur.Controllers.DeviseController.GetAll" -->
-        <!-- Commentaire XML incorrect pour le membre "M:WSConvertisseur.Controllers.DeviseController.GetById(System.Int32)" -->
+        <!-- Commentaire XML incorrect pour le membre "M:WSConvertisseur.Controllers.DeviseController.GetId(System.Int32)" -->
         <!-- Commentaire XML incorrect pour le membre "M:WSConvertisseur.Controllers.DeviseController.Post(WSConvertisseur.Models.Devise)" -->
         <!-- Commentaire XML incorrect pour le membre "M:WSConvertisseur.Controllers.DeviseController.Put(System.Int32,WSConvertisseur.Models.Devise)" -->
         <!-- Commentaire XML incorrect pour le membre "M:WSConvertisseur.Controllers.DeviseController.Delete(System.Int32)" -->

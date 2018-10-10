@@ -37,5 +37,14 @@ namespace WSConvertisseur.Models
             NomDevise = nomDevise;
             Taux = taux;
         }
+
+        public override bool Equals(object obj)
+        {
+            var devise = obj as Devise;
+            return devise != null &&
+                   Id == devise.Id &&
+                   NomDevise == devise.NomDevise &&
+                   Taux == devise.Taux;
+        }
     }
 }

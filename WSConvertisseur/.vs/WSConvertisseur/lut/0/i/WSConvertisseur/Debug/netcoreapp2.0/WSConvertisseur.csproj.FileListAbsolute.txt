@@ -1,0 +1,10 @@
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\b\WSConvertisseur\Debug\netcoreapp2.0\WSConvertisseur.deps.json
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\b\WSConvertisseur\Debug\netcoreapp2.0\WSConvertisseur.runtimeconfig.json
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\b\WSConvertisseur\Debug\netcoreapp2.0\WSConvertisseur.runtimeconfig.dev.json
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\b\WSConvertisseur\Debug\netcoreapp2.0\WSConvertisseur.dll
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\i\WSConvertisseur\Debug\netcoreapp2.0\WSConvertisseur.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\i\WSConvertisseur\Debug\netcoreapp2.0\WSConvertisseur.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\i\WSConvertisseur\Debug\netcoreapp2.0\WSConvertisseur.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\i\WSConvertisseur\Debug\netcoreapp2.0\WSConvertisseur.AssemblyInfo.cs
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\i\WSConvertisseur\Debug\netcoreapp2.0\WSConvertisseur.csproj.CopyComplete
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\i\WSConvertisseur\Debug\netcoreapp2.0\WSConvertisseur.dll

@@ -1,0 +1,13 @@
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\b\WSConvertisseurUnitTestProject\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\b\WSConvertisseurUnitTestProject\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\b\WSConvertisseurUnitTestProject\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\b\WSConvertisseurUnitTestProject\Debug\netcoreapp2.0\WSConvertisseurUnitTestProject.deps.json
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\b\WSConvertisseurUnitTestProject\Debug\netcoreapp2.0\WSConvertisseurUnitTestProject.runtimeconfig.json
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\b\WSConvertisseurUnitTestProject\Debug\netcoreapp2.0\WSConvertisseurUnitTestProject.runtimeconfig.dev.json
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\b\WSConvertisseurUnitTestProject\Debug\netcoreapp2.0\WSConvertisseurUnitTestProject.dll
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\i\WSConvertisseurUnitTestProject\Debug\netcoreapp2.0\WSConvertisseurUnitTestProject.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\i\WSConvertisseurUnitTestProject\Debug\netcoreapp2.0\WSConvertisseurUnitTestProject.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\i\WSConvertisseurUnitTestProject\Debug\netcoreapp2.0\WSConvertisseurUnitTestProject.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\i\WSConvertisseurUnitTestProject\Debug\netcoreapp2.0\WSConvertisseurUnitTestProject.AssemblyInfo.cs
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\i\WSConvertisseurUnitTestProject\Debug\netcoreapp2.0\WSConvertisseurUnitTestProject.csproj.CopyComplete
+C:\Users\Admin\source\repos\WSConvertisseur\.vs\WSConvertisseur\lut\0\i\WSConvertisseurUnitTestProject\Debug\netcoreapp2.0\WSConvertisseurUnitTestProject.dll

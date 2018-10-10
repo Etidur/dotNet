@@ -11,7 +11,6 @@ namespace WSConvertisseur.Controllers
     /// <summary>
     /// Gestion des devises
     /// </summary>
-    [Produces("application/json")]
     [Route("api/Devise")]
     public class DeviseController : Controller
     {
@@ -25,10 +24,12 @@ namespace WSConvertisseur.Controllers
         /// </summary>
         public DeviseController()
         {
-            ListeDevises = new List<Devise>();
-            ListeDevises.Add(new Devise(1, "Dollar", 1.08));
-            ListeDevises.Add(new Devise(2, "Franc Suisse", 1.07));
-            ListeDevises.Add(new Devise(3, "Yen", 120));
+            ListeDevises = new List<Devise>
+            {
+                new Devise(1, "Dollar", 1.08),
+                new Devise(2, "Franc Suisse", 1.07),
+                new Devise(3, "Yen", 120)
+            };
         }
 
         /// <summary>
@@ -39,7 +40,7 @@ namespace WSConvertisseur.Controllers
         /// <response code="200">Liste des devises</response>
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<Devise>), 200)]
-        public IEnumerable<Devise> GetAll()
+        public async Task<List<Devise>> GetAll()
         {
             return ListeDevises;
         }
@@ -55,7 +56,7 @@ namespace WSConvertisseur.Controllers
         [HttpGet("{id}", Name = "GetDevise")]
         [ProducesResponseType(typeof(Devise), 200)]
         [ProducesResponseType(404)]
-        public IActionResult GetById(int id)
+        public async Task<IActionResult> GetId(int id)
         {
             Devise devise = ListeDevises.FirstOrDefault((d) => d.Id == id);
 
@@ -77,7 +78,7 @@ namespace WSConvertisseur.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(Devise), 200)]
         [ProducesResponseType(400)]
-        public IActionResult Post([FromBody]Devise devise)
+        public async Task<IActionResult> Post([FromBody]Devise devise)
         {
             if (!ModelState.IsValid)
             {
@@ -102,7 +103,7 @@ namespace WSConvertisseur.Controllers
         [ProducesResponseType(204)]
         [ProducesResponseType(400)]
         [ProducesResponseType(404)]
-        public IActionResult Put(int id, [FromBody] Devise devise)
+        public async Task<IActionResult> Put(int id, [FromBody] Devise devise)
         {
             if (!ModelState.IsValid)
             {
@@ -137,7 +138,7 @@ namespace WSConvertisseur.Controllers
         [HttpDelete("{id}")]
         [ProducesResponseType(typeof(Devise), 200)]
         [ProducesResponseType(404)]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             Devise devise = ListeDevises.FirstOrDefault((d) => d.Id == id);
 

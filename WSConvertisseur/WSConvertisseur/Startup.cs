@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -17,6 +18,7 @@ namespace WSConvertisseur
     {
         public Startup(IConfiguration configuration)
         {
+
             Configuration = configuration;
         }
 
@@ -40,6 +42,10 @@ namespace WSConvertisseur
                 var xmlFile = Path.ChangeExtension(typeof(Startup).Assembly.Location,
                ".xml");
                 c.IncludeXmlComments(xmlFile);
+            });
+            services.AddMvc(options =>
+            {
+                options.OutputFormatters.Add(new XmlSerializerOutputFormatter());
             });
         }
 

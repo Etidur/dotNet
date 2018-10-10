@@ -14,13 +14,10 @@ using Windows.UI.Popups;
 namespace ClientConvertisseurV2.ViewModel
 {
     /// <summary>
-    /// Classe faisant le lien entre le modèle et la vue
+    /// Classe gérant le traitement de la page DevToEuro
     /// </summary>
     public class DevToEuroViewModel : AbstractDeviseViewModel
     {
-        /// <summary>
-        /// Complète l'interface avec des valeurs dynamiques et initialise l'action du bouton
-        /// </summary>
         public DevToEuroViewModel() : base()
         {
         }
