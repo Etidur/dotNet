@@ -16,14 +16,13 @@ namespace ClientConvertisseurV2.ViewModel
     /// <summary>
     /// Classe faisant le lien entre le modèle et la vue
     /// </summary>
-    public class MainViewModel : ViewModelBase
+    public abstract class AbstractDeviseViewModel : ViewModelBase
     {
-        private ObservableCollection<Devise> _comboBoxDevises;
+        protected ObservableCollection<Devise> _comboBoxDevises;
         public ICommand BtnSetConversion { get; private set; }
-
-        private string _montantEuros;
-        private Devise _devise;
-        private string _montantConverti;
+        protected string _montantEuro;
+        protected string _montantDevise;
+        protected Devise _devise;
 
         public ObservableCollection<Devise> ComboBoxDevises
         {
@@ -34,25 +33,25 @@ namespace ClientConvertisseurV2.ViewModel
                 RaisePropertyChanged();// Pour notifier de la modification de ses donnée
             }
         }
-        public string MontantEuros {
-            get { return _montantEuros; }
-            set { _montantEuros = value; RaisePropertyChanged(); }
+        public string MontantEuro {
+            get { return _montantEuro; }
+            set { _montantEuro = value; RaisePropertyChanged(); }
         }
         public Devise ComboBoxDeviseItem
         {
             get { return _devise; }
             set { _devise = value; RaisePropertyChanged(); }
         }
-        public string MontantConverti
+        public string MontantDevise
         {
-            get { return _montantConverti; }
-            set { _montantConverti = value; RaisePropertyChanged("MontantConverti"); }
+            get { return _montantDevise; }
+            set { _montantDevise = value; RaisePropertyChanged("MontantDevise"); }
         }
 
         /// <summary>
         /// Complète l'interface avec des valeurs dynamiques et initialise l'action du bouton
         /// </summary>
-        public MainViewModel()
+        public AbstractDeviseViewModel()
         {
             ActionGetData();
             BtnSetConversion = new RelayCommand(ActionSetConversion);
@@ -61,31 +60,12 @@ namespace ClientConvertisseurV2.ViewModel
         /// <summary>
         /// Calcule la conversion et affiche le résultat dans l'interface
         /// </summary>
-        private void ActionSetConversion()
-        {
-            double montant = 0, taux = 1;
-
-            try
-            {
-                montant = Convert.ToDouble(_montantEuros);
-                taux = ComboBoxDeviseItem.Taux;
-            }
-            catch (FormatException)
-            {
-                this.MessageBox("Le montant n'est pas correct");
-            }
-            catch (NullReferenceException)
-            {
-                this.MessageBox("Aucune devise n'a été séléctionnée");
-            }
-
-            MontantConverti = Convert.ToString(montant * taux);
-         }
+        protected abstract void ActionSetConversion();
 
         /// <summary>
         /// Récupère la liste des devises via le service connecté à l'API
         /// </summary>
-        private async void ActionGetData()
+        protected async void ActionGetData()
         {
             WSService connection = WSService.GetInstance();
             var result = await connection.GetAllDevisesAsync("Devise");
@@ -96,7 +76,7 @@ namespace ClientConvertisseurV2.ViewModel
         /// Afficher un message dans une boîte de dialogue
         /// </summary>
         /// <param name="message">Message (String) à afficher</param>
-        private async void MessageBox(string message)
+        protected async void MessageBox(string message)
         {
             var dialog = new MessageDialog(message);
             await dialog.ShowAsync();

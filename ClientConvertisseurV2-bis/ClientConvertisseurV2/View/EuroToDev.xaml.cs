@@ -23,9 +23,9 @@ namespace ClientConvertisseurV2.View
     /// <summary>
     /// Initialise l'interface graphique
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class EuroToDevPage : Page
     {
-        public MainPage()
+        public EuroToDevPage()
         {
             this.InitializeComponent();
         }

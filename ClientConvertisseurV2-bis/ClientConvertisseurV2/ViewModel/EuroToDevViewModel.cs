@@ -16,15 +16,15 @@ namespace ClientConvertisseurV2.ViewModel
     /// <summary>
     /// Classe faisant le lien entre le modèle et la vue
     /// </summary>
-    public class DevToEuroViewModel : AbstractDeviseViewModel
+    public class EuroToDevViewModel : AbstractDeviseViewModel
     {
         /// <summary>
         /// Complète l'interface avec des valeurs dynamiques et initialise l'action du bouton
         /// </summary>
-        public DevToEuroViewModel() : base()
+        public EuroToDevViewModel() : base()
         {
         }
-        
+
         /// <summary>
         /// Calcule la conversion et affiche le résultat dans l'interface
         /// </summary>
@@ -34,8 +34,8 @@ namespace ClientConvertisseurV2.ViewModel
 
             try
             {
-                montant = Convert.ToDouble(_montantDevise);
-                taux = 1 / (ComboBoxDeviseItem.Taux);
+                montant = Convert.ToDouble(_montantEuro);
+                taux = ComboBoxDeviseItem.Taux;
             }
             catch (FormatException)
             {
@@ -46,7 +46,7 @@ namespace ClientConvertisseurV2.ViewModel
                 this.MessageBox("Aucune devise n'a été séléctionnée");
             }
 
-            MontantEuro = Convert.ToString(montant * taux);
+            MontantDevise= Convert.ToString(montant * taux);
          }
     }
 }

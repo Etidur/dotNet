@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Admin\source\repos\ClientConvertisseurV2-bis\ClientConvertisseurV2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-10-10T06:49:40.352</Modified>
+      <Modified>2018-10-10T09:37:47.781</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Admin\source\repos\ClientConvertisseurV2-bis\ClientConvertisseurV2\bin\x86\Debug\ClientConvertisseurV2.exe">
       <PackagePath>entrypoint\ClientConvertisseurV2.exe</PackagePath>
-      <Modified>2018-10-10T06:49:37.220</Modified>
+      <Modified>2018-10-10T09:37:47.303</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\.nuget\packages\commonservicelocator\2.0.2\lib\netstandard1.0\CommonServiceLocator.dll">
       <PackagePath>CommonServiceLocator.dll</PackagePath>
@@ -579,19 +579,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\source\repos\ClientConvertisseurV2-bis\ClientConvertisseurV2\bin\x86\Debug\ClientConvertisseurV2.xr.xml">
       <PackagePath>ClientConvertisseurV2.xr.xml</PackagePath>
-      <Modified>2018-10-10T06:49:36.981</Modified>
+      <Modified>2018-10-10T09:18:37.567</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\source\repos\ClientConvertisseurV2-bis\ClientConvertisseurV2\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2018-10-10T06:49:37.033</Modified>
+      <Modified>2018-10-10T09:37:47.146</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\source\repos\ClientConvertisseurV2-bis\ClientConvertisseurV2\bin\x86\Debug\View\DevToEuroPage.xbf">
       <PackagePath>View\DevToEuroPage.xbf</PackagePath>
-      <Modified>2018-10-10T06:49:37.034</Modified>
+      <Modified>2018-10-10T09:37:47.148</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Admin\source\repos\ClientConvertisseurV2-bis\ClientConvertisseurV2\bin\x86\Debug\View\MainPage.xbf">
-      <PackagePath>View\MainPage.xbf</PackagePath>
-      <Modified>2018-10-10T06:49:37.035</Modified>
+    <AppxPackagedFile Include="C:\Users\Admin\source\repos\ClientConvertisseurV2-bis\ClientConvertisseurV2\bin\x86\Debug\View\RootPage.xbf">
+      <PackagePath>View\RootPage.xbf</PackagePath>
+      <Modified>2018-10-10T09:37:47.149</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Admin\source\repos\ClientConvertisseurV2-bis\ClientConvertisseurV2\bin\x86\Debug\View\EuroToDev.xbf">
+      <PackagePath>View\EuroToDev.xbf</PackagePath>
+      <Modified>2018-10-10T09:37:47.149</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -600,11 +604,11 @@
     <AppxPackagedFile Include="C:\Users\Admin\source\repos\ClientConvertisseurV2-bis\ClientConvertisseurV2\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-10-10T06:49:39.725</Modified>
+      <Modified>2018-10-10T09:18:38.275</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admin\source\repos\ClientConvertisseurV2-bis\ClientConvertisseurV2\bin\x86\Debug\Core\ClientConvertisseurV2.exe">
       <PackagePath>ClientConvertisseurV2.exe</PackagePath>
-      <Modified>2018-10-10T06:49:40.311</Modified>
+      <Modified>2018-10-10T09:37:47.772</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

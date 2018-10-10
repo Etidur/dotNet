@@ -6,6 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    DataContext="{Binding DevToEuro, Source={StaticResource Locator}}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <RelativePanel>
@@ -60,7 +61,7 @@
             RelativePanel.AlignHorizontalCenterWithPanel="True"
             RelativePanel.Below="textResultat"
             HorizontalAlignment="Center"
-            Text="{Binding MontantEuros, Mode=OneWay}"
+            Text="{Binding MontantEuro, Mode=OneWay}"
             Height="32" Margin="0,10,0,0" VerticalAlignment="Top" Width="163"
         />
         
