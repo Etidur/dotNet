@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WSConvertisseur</name>
+    </assembly>
+    <members>
+        <member name="T:WSConvertisseur.Controllers.DeviseController">
+            <summary>
+            Gestion des devises
+            </summary>
+        </member>
+        <member name="P:WSConvertisseur.Controllers.DeviseController.ListeDevises">
+            <summary>
+            Liste des dévises 
+            </summary>
+        </member>
+        <member name="M:WSConvertisseur.Controllers.DeviseController.#ctor">
+            <summary>
+            Initialise le controller en créant une liste de devises à gérer
+            </summary>
+        </member>
+        <!-- Commentaire XML incorrect pour le membre "M:WSConvertisseur.Controllers.DeviseController.GetAll" -->
+        <!-- Commentaire XML incorrect pour le membre "M:WSConvertisseur.Controllers.DeviseController.GetById(System.Int32)" -->
+        <!-- Commentaire XML incorrect pour le membre "M:WSConvertisseur.Controllers.DeviseController.Post(WSConvertisseur.Models.Devise)" -->
+        <!-- Commentaire XML incorrect pour le membre "M:WSConvertisseur.Controllers.DeviseController.Put(System.Int32,WSConvertisseur.Models.Devise)" -->
+        <!-- Commentaire XML incorrect pour le membre "M:WSConvertisseur.Controllers.DeviseController.Delete(System.Int32)" -->
+        <member name="T:WSConvertisseur.Models.Devise">
+            <summary>
+            Devise
+            </summary>
+        </member>
+        <member name="P:WSConvertisseur.Models.Devise.Id">
+            <summary>
+            Id de la devise
+            </summary>
+        </member>
+        <member name="P:WSConvertisseur.Models.Devise.NomDevise">
+            <summary>
+            Nome de la devise
+            </summary>
+        </member>
+        <member name="P:WSConvertisseur.Models.Devise.Taux">
+            <summary>
+            Taux de conversion de la devise
+            </summary>
+        </member>
+    </members>
+</doc>
