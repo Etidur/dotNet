@@ -1,0 +1,69 @@
+﻿<Page
+    x:Class="ClientConvertisseurV2.View.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ClientConvertisseurV2.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DataContext="{Binding Main, Source={StaticResource Locator}}"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <RelativePanel>
+        <TextBlock 
+            x:Name="textMontant"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            Height="20" Margin="0,55,-6,0" Text="Montant en Euros" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Stretch"
+        />
+        <TextBox 
+            x:Name="textBoxMontant"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            RelativePanel.Below="textMontant"
+            HorizontalAlignment="Center"
+            Text="{Binding MontantEuros, Mode=TwoWay}"
+            Height="32" Margin="0,10,0,0" VerticalAlignment="Top" Width="163"
+        />
+
+        <TextBlock 
+            x:Name="textDevise"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            RelativePanel.Below="textBoxMontant"
+            Height="20" Margin="0,20,0,0" Text="Devise" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Center" Width="47"
+        />
+        <ComboBox 
+            x:Name="comboBox"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            RelativePanel.Below="textDevise"
+            ItemsSource="{Binding ComboBoxDevises}"
+            DisplayMemberPath="NomDevise"
+            SelectedValuePath="Id"
+            SelectedItem="{Binding ComboBoxDeviseItem, Mode=TwoWay}"
+            HorizontalAlignment="Center" Height="32" Margin="0,10,0,0" VerticalAlignment="Top" Width="160"
+        />
+
+        <Button 
+            x:Name="button"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            RelativePanel.Below="comboBox"
+            Content="Convertir" 
+            Command="{Binding BtnSetConversion}"
+            HorizontalAlignment="Center" Height="32" Margin="0,30,0,0" VerticalAlignment="Top" Width="166"
+        />
+
+        <TextBlock 
+            x:Name="textResultat"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            RelativePanel.Below="button"
+            Height="20" Margin="0,30,-7,0" Text="Montant converti" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Stretch"
+        />
+        <TextBox 
+            x:Name="textBoxResultat"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            RelativePanel.Below="textResultat"
+            HorizontalAlignment="Center" 
+            Text="{Binding MontantConverti, Mode=OneWay}"
+            Height="32" Margin="0,10,0,0" VerticalAlignment="Top" Width="163"
+        />
+
+    </RelativePanel>
+</Page>

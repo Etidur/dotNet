@@ -1,0 +1,12 @@
+C:\Users\Admin\source\repos\WSConvertisseur\WSConvertisseur\bin\Debug\netcoreapp2.0\WSConvertisseur.deps.json
+C:\Users\Admin\source\repos\WSConvertisseur\WSConvertisseur\bin\Debug\netcoreapp2.0\WSConvertisseur.runtimeconfig.json
+C:\Users\Admin\source\repos\WSConvertisseur\WSConvertisseur\bin\Debug\netcoreapp2.0\WSConvertisseur.runtimeconfig.dev.json
+C:\Users\Admin\source\repos\WSConvertisseur\WSConvertisseur\bin\Debug\netcoreapp2.0\WSConvertisseur.dll
+C:\Users\Admin\source\repos\WSConvertisseur\WSConvertisseur\obj\Debug\netcoreapp2.0\WSConvertisseur.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\WSConvertisseur\WSConvertisseur\obj\Debug\netcoreapp2.0\WSConvertisseur.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\WSConvertisseur\WSConvertisseur\obj\Debug\netcoreapp2.0\WSConvertisseur.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\WSConvertisseur\WSConvertisseur\obj\Debug\netcoreapp2.0\WSConvertisseur.AssemblyInfo.cs
+C:\Users\Admin\source\repos\WSConvertisseur\WSConvertisseur\bin\Debug\netcoreapp2.0\WSConvertisseur.pdb
+C:\Users\Admin\source\repos\WSConvertisseur\WSConvertisseur\obj\Debug\netcoreapp2.0\WSConvertisseur.dll
+C:\Users\Admin\source\repos\WSConvertisseur\WSConvertisseur\obj\Debug\netcoreapp2.0\WSConvertisseur.pdb
+C:\Users\Admin\source\repos\WSConvertisseur\WSConvertisseur\bin\Debug\netcoreapp2.0\WSConvertisseur.xml
