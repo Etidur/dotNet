@@ -5,13 +5,19 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TP3.Models.EntityFramework
 {
+
     [Table("T_E_FILM_FLM")]
     public class Film
     {
-    
-        [Key]
+        public Film()
+        {
+            AvisFilm = new HashSet<Avis>();
+            FavorisFilm = new HashSet<Favori>();
+        }
+
+        //On ne met pas [Key] et on la créé dans l'API fluent afin de pouvoir définir son nom
+        //[DatabaseGenerated(DatabaseGeneratedOption.Identity)] pas utile car Identity par défaut dans SQL Server
         [Column("FLM_ID")]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int FilmId { get; set; }
 
         [Required]
@@ -23,39 +29,25 @@ namespace TP3.Models.EntityFramework
         [StringLength(500)]
         public string Synopsis { get; set; }
 
+        [Column("FLM_DATEPARUTION", TypeName = "datetime")]
+        public DateTime DateParution { get; set; }
 
-
-        [Column("FLM_DATEPARUTION")]
-        public string DateParution { get; set; }
-        
-        
-
-        [Required]
-        [Column("FLM_DUREE")]
-        [DataType("decimal(3,0")]
-        public Decimal Duree { get; set; }
+        [Column("FLM_DUREE", TypeName = "numeric(3, 0)")]
+        public decimal Duree { get; set; }
 
         [Required]
         [Column("FLM_GENRE")]
         [StringLength(30)]
-        public String Genre { get; set; }
-        
-        [Required]
+        public string Genre { get; set; }
+
         [Column("FLM_URLPHOTO")]
         [StringLength(200)]
-        public String UrlPhoto { get; set; }
+        public string UrlPhoto { get; set; }
 
-
-
-
-
-
-
-        [ForeignKey("AvisFilm")]
-        [InverseProperty("Film")]
-        public Avis AvisFilm { get; set; }
         [InverseProperty("FilmAvis")]
-        public ICollection<Avis> Avis { get; set; }
+        public ICollection<Avis> AvisFilm { get; set; }
 
+        [InverseProperty("FilmFavori")]
+        public ICollection<Favori> FavorisFilm { get; set; }
     }
 }

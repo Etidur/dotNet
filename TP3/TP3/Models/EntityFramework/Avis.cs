@@ -8,54 +8,34 @@ namespace TP3.Models.EntityFramework
     [Table("T_E_AVIS_AVI")]
     public class Avis
     {
-        [Key]
-
         [Column("CPT_ID")]
         public int CompteId { get; set; }
-    
-        [Key]
+
         [Column("FLM_ID")]
         public int FilmId { get; set; }
 
-        [Required]
-        [Column("AVI_DATE")]
-
+        [Column("AVI_DATE", TypeName = "datetime")]
         public DateTime DateAvis { get; set; }
 
-        [Column("FLM_SYNOPSIS")]
-        [StringLength(500)]
-        public string Synopsis { get; set; }
-
-
-
-        [Column("FLM_DATEPARUTION")]
-        public string DateParution { get; set; }
-        
-        
+        [Required]
+        [Column("AVI_TITRE")]
+        [StringLength(100)]
+        public string Titre { get; set; }
 
         [Required]
-        [Column("FLM_DUREE")]
-        [DataType("decimal(3,0")]
-        public Decimal Duree { get; set; }
+        [Column("AVI_DETAIL")]
+        [StringLength(2000)]
+        public string Detail { get; set; }
 
-        [Required]
-        [Column("FLM_GENRE")]
-        [StringLength(30)]
-        public String Genre { get; set; }
-        
-        [Required]
-        [Column("FLM_URLPHOTO")]
-        [StringLength(200)]
-        public String UrlPhoto { get; set; }
+        [Column("AVI_NOTE", TypeName = "numeric(1, 0)")]
+        public decimal Note { get; set; }
 
+        [ForeignKey("CompteId")]
+        [InverseProperty("AvisCompte")]
+        public Compte CompteAvis { get; set; }
 
-
-
-        [ForeignKey("AvisFilm")]
-        [InverseProperty("Film")]
-        public Avis AvisFilm { get; set; }
-        [InverseProperty("FilmNavigation")]
-        public ICollection<Avis> Avis { get; set; }
-
+        [ForeignKey("FilmId")]
+        [InverseProperty("AvisFilm")]
+        public Film FilmAvis { get; set; }
     }
 }
