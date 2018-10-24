@@ -20,18 +20,74 @@ namespace TP2Console
             //Exo2Q6();
             //Exo2Q7();
             //Exo2Q8();
-            Exo2Q9();
+            //Exo2Q9();
+            //Exo3Q1();
+            Exo3Q2();
         }
+
+        private static void Exo3Q3()
+        {
+/*            var ctx = new FilmsDBContext();
+
+            var film = ctx.Film.Where(f => f.Nom.Equals("L'armee des douze singes")).First();
+
+            var avis = ctx.Avis
+                .Include(a => a.Film)
+                .Where(f => f.Film.Equals(film.Id)).ToList();
+                /
+            Console.WriteLine(avis);
+/*
+            ctx.Avis.RemoveRange(avis);
+            ctx.Film.Remove(film);
+            ctx.SaveChanges();
+            */
+            //Console.ReadKey();
+        }
+
+        private static void Exo3Q2()
+        {
+            var ctx = new FilmsDBContext();
+
+            var film = ctx.Film.Where(f => f.Nom.Equals("L'armee des douze singes")).First();
+            var categorie = ctx.Categorie.Where(c => c.Nom.Equals("Drame")).First();
+
+            film.Description = "Il y a des singes";
+            film.Categorie = categorie.Id;
+            ctx.SaveChanges();
+
+            Console.WriteLine(film);
+            Console.ReadKey();
+        }
+        
+
+        private static void Exo3Q1()
+        {
+            var ctx = new FilmsDBContext();
+
+            var usr = new Utilisateur()
+            {
+                Login = "Etidur",
+                Email = "e@e.fr",
+                Pwd = "1234"
+            };
+
+            ctx.Utilisateur.Add(usr);
+            ctx.SaveChanges();
+            Console.WriteLine("User " + usr.Login + " rajouté");
+
+            Console.ReadKey();
+        }
+        
 
         private static void Exo2Q9()
         {
             var ctx = new FilmsDBContext();
+            
+            var utilisateur = ctx.Utilisateur
+                .Include(u => u.Avis)
+                .OrderByDescending(u => u.Avis.Max(a => a.Note)).First();
 
-            var noteMax = ctx.Avis
-                .Include(a => a.Utilisateur)
-                .Max(a => a.Note);
-
-            Console.WriteLine(noteMax);
+            Console.WriteLine(utilisateur.Login);
 
             Console.ReadKey();
         }
