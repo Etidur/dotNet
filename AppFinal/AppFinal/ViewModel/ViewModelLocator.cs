@@ -21,10 +21,17 @@ namespace AppFinal.ViewModel
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
             SimpleIoc.Default.Register<HomePageViewModel>();
+            SimpleIoc.Default.Register<SearchPageViewModel>();
         }
+
         /// <summary>         
-        /// Gets the EuroToDev model.         
+        /// Gets the Homepage model.         
         /// </summary>         
         public HomePageViewModel HomePage => ServiceLocator.Current.GetInstance<HomePageViewModel>();
+
+        /// <summary>         
+        /// Gets the Search page model.         
+        /// </summary>         
+        public SearchPageViewModel SearchPage => ServiceLocator.Current.GetInstance<SearchPageViewModel>();
     }
 }

@@ -1,20 +1,17 @@
 ﻿<Page
-    x:Class="AppFinal.View.HomePage"
+    x:Class="AppFinal.View.SearchPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:AppFinal.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    DataContext="{Binding HomePage, Source={StaticResource Locator}}"
+    DataContext="{Binding SearchPage, Source={StaticResource Locator}}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <RelativePanel>
-        <Image x:Name="logoAlloCine" Source="http://www.business-actor.com/wpcontent/uploads/2013/07/logo-allocine.png"
-               RelativePanel.AlignHorizontalCenterWithPanel="True"
-               RelativePanel.AlignVerticalCenterWithPanel="True"/>
-        <TextBlock x:Name="NomAppli" Text="My AlloCine"
+    <Grid>
+        <TextBlock x:Name="NomAppli" Text="Recheeeerch"
                    RelativePanel.Above="logoAlloCine" RelativePanel.AlignHorizontalCenterWithPanel="True"
                    FontWeight="Bold" FontSize="24" Foreground="Orange"/>
-    </RelativePanel>
+    </Grid>
 </Page>

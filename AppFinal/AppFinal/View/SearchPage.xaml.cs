@@ -20,33 +20,11 @@ namespace AppFinal.View
     /// <summary>
     /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
     /// </summary>
-    public sealed partial class RootPage : Page
+    public sealed partial class SearchPage: Page
     {
-        public RootPage(Frame frame)
+        public SearchPage()
         {
             this.InitializeComponent();
-            this.MySplitView.Content = frame;
-            (MySplitView.Content as Frame).Navigate(typeof(HomePage));
-
-        }
-
-        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
-        {
-            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
-        }
-
-        private void BackButton_Click(object sender, RoutedEventArgs e)
-        {
-            Frame myFrame = this.MySplitView.Content as Frame;
-            if (myFrame.CanGoBack)
-            {
-                myFrame.GoBack();
-            }
-        }
-
-        private void SearchButton_Click(object sender, RoutedEventArgs e)
-        {
-            (MySplitView.Content as Frame).Navigate(typeof(SearchPage));
         }
     }
 }

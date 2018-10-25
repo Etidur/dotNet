@@ -57,7 +57,7 @@ namespace AppFinal
                 }
 
                 // Placez le frame dans la fenêtre active
-                Window.Current.Content = rootFrame;
+                Window.Current.Content = new RootPage(rootFrame);
             }
 
             if (e.PrelaunchActivated == false)

@@ -5,7 +5,6 @@
     xmlns:vm="using:AppFinal.ViewModel"
     xmlns:local="using:AppFinal">
 
-
     <Application.Resources>
         <!--Global View Model Locator-->
         <vm:ViewModelLocator x:Key="Locator"/>

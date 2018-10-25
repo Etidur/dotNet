@@ -13,9 +13,9 @@ using Windows.UI.Popups;
 
 namespace AppFinal.ViewModel
 {
-    public class HomePageViewModel : ViewModelBase
+    public class SearchPageViewModel : ViewModelBase
     {
-        public HomePageViewModel()
+        public SearchPageViewModel()
         {
 
         }
