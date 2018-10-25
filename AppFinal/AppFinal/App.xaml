@@ -1,0 +1,13 @@
+﻿<Application
+    x:Class="AppFinal.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="using:AppFinal.ViewModel"
+    xmlns:local="using:AppFinal">
+
+
+    <Application.Resources>
+        <!--Global View Model Locator-->
+        <vm:ViewModelLocator x:Key="Locator"/>
+    </Application.Resources>
+</Application>
