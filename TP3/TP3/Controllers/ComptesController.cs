@@ -38,7 +38,8 @@ namespace TP3.Controllers
                 return BadRequest(ModelState);
             }
 
-            var compte = await _context.Compte.SingleOrDefaultAsync(m => m.CompteId == id);
+            //var compte = await _context.Compte.SingleOrDefaultAsync(m => m.CompteId == id);
+           var compte = await _context.Compte.Include(c => c.FavorisCompte).Include(c => c.AvisCompte).SingleOrDefaultAsync(m => m.CompteId == id);
 
             if (compte == null)
             {
@@ -148,6 +149,5 @@ namespace TP3.Controllers
 
             return Ok(compte);
         }
-
     }
 }

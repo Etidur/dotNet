@@ -22,6 +22,7 @@ namespace TP3.Models.EntityFramework
         public virtual DbSet<Film> Film { get; set; }
         public virtual DbSet<Favori> Favori { get; set; }
 
+        /**
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured) {
@@ -29,6 +30,7 @@ namespace TP3.Models.EntityFramework
                 optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS; Database=FilmRatingsDB; Trusted_Connection=True;");
             }
         }
+        **/
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
