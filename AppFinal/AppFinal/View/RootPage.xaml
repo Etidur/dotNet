@@ -21,25 +21,14 @@
 />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <Button x:Name="Home" FontFamily="Segoe MDL2 Assets"
+                    <Button x:Name="Home" FontFamily="Segoe MDL2 Assets" Click="HomeButton_Click"
                             Content="&#xE80F;" Width="50" Height="50" Background="Transparent"/>
                     <TextBlock Text="Home" FontSize="18" VerticalAlignment="Center" />
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <Button x:Name="Movies" FontFamily="Segoe MDL2 Assets"
-                            Content="&#xE714;" Width="50" Height="50" Background="Transparent"/>
-                    <TextBlock Text="Films" FontSize="18" VerticalAlignment="Center" />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Button x:Name="Account" FontFamily="Segoe MDL2 Assets"  Click="SearchButton_Click"
                             Content="&#xE8CF;" Width="50" Height="50" Background="Transparent"/>
                     <TextBlock Text="Compte" FontSize="18" VerticalAlignment="Center" />
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <Button x:Name="Settings" FontFamily="Segoe MDL2 Assets"
-                            Content="&#xE713;" Width="50" Height="50" Background="Transparent"/>
-                    <TextBlock Text="Paramètres" FontSize="18" VerticalAlignment="Center"
-/>
                 </StackPanel>
             </StackPanel>
         </SplitView.Pane>

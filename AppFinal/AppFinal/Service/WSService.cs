@@ -11,7 +11,6 @@ namespace AppFinal.Service
 {
     public class WSService
     {
-
         static HttpClient client = new HttpClient();
         static WSService wsService = null;
 
@@ -23,11 +22,7 @@ namespace AppFinal.Service
                 new MediaTypeWithQualityHeaderValue("application/json")
             );
         }
-
-        /// <summary>
-        /// Fourni un singleton
-        /// </summary>
-        /// <returns></returns>
+        
         public static WSService GetInstance()
         {
             if (wsService == null)
@@ -37,12 +32,7 @@ namespace AppFinal.Service
 
             return wsService;
         }
-
-        /// <summary>
-        /// Récupère la list de toutes les devises présentes dans l'API
-        /// </summary>
-        /// <param name="path"></param>
-        /// <returns></returns>
+        
         public async Task<Compte> GetCompteByEmailAsync(string path)
         {
             //comptes/GetCompteByEmail/paul.durand@gmail.com

@@ -44,6 +44,11 @@ namespace AppFinal.View
             }
         }
 
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            (MySplitView.Content as Frame).Navigate(typeof(HomePage));
+        }
+
         private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
             (MySplitView.Content as Frame).Navigate(typeof(SearchPage));

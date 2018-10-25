@@ -9,9 +9,53 @@
     DataContext="{Binding SearchPage, Source={StaticResource Locator}}"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <TextBlock x:Name="NomAppli" Text="Recheeeerch"
-                   RelativePanel.Above="logoAlloCine" RelativePanel.AlignHorizontalCenterWithPanel="True"
-                   FontWeight="Bold" FontSize="24" Foreground="Orange"/>
-    </Grid>
+
+
+    <RelativePanel>
+        <TextBlock 
+            x:Name="textTitle"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            Height="30" Margin="0,55,-6,0" Text="Recherche d'un compte" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Stretch"
+        />
+
+        <TextBlock 
+            x:Name="textMail"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            RelativePanel.Below="textTitle"
+            Height="20" Margin="0,55,-6,0" Text="Tappez l'addresse mail du compte" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Stretch"
+        />
+        <TextBox 
+            x:Name="textBoxDevise"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            RelativePanel.Below="textMail"
+            HorizontalAlignment="Center" 
+            Text="{Binding ValeurEmail, Mode=TwoWay}"
+            Height="32" Margin="0,10,0,0" VerticalAlignment="Top" Width="163"
+        />
+
+            <Button 
+            x:Name="button"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            RelativePanel.Below="textBoxDevise"
+            Content="Rechercher" 
+            Command="{Binding BtnSearchExecute}"
+            HorizontalAlignment="Center" Height="32" Margin="0,30,0,0" VerticalAlignment="Top" Width="166"
+        />
+
+            <TextBlock 
+            x:Name="textResultat"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            RelativePanel.Below="button"
+            Height="20" Margin="0,30,-7,0" Text="Compte trouvé: " TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Stretch"
+        />
+            <TextBox 
+            x:Name="textBoxMontant"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            RelativePanel.Below="textResultat"
+            HorizontalAlignment="Center"
+            Text="{Binding ValeurCompteNom, Mode=OneWay}"
+            Height="32" Margin="0,10,0,0" VerticalAlignment="Top" Width="163"
+        />
+
+    </RelativePanel>
 </Page>
